@@ -13,6 +13,9 @@ a{
     background-size: cover;
     background: url("../images/top-main-banner.png") no-repeat top;
 }
+.top-container.event-container{
+    background: url("../images/eventBaner.png") no-repeat bottom;
+}
 .header-container{
     width: 94%;
     max-width: 1820px;
@@ -24,6 +27,24 @@ a{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+.black-header .menu a{
+    color: #2B2A29;
+}
+.black-header .menu a:hover{
+    color: #FF565B;
+}
+.black-header .telephone-desktop{
+    color: #2B2A29;
+}
+.black-header .telephone-desktop img{
+    width: 20px;
+}
+.menu-content{
+    display: flex;
+}
+.menu{
+    padding-right: 120px;
 }
 .menu a{
     text-decoration: none;
@@ -234,6 +255,9 @@ a{
     box-shadow:  -4px -4px 10px rgba(255, 255, 255, 0.2),  4px 4px 10px rgba(255, 255, 255, 0.2);
     /*color: ;*/
 }
+.tariffs-items.event--tariff-items{
+    justify-content: center;
+}
 .tariff-item:hover{
     box-shadow:  -4px -4px 10px rgba(0, 0, 0, 0.1),  4px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -395,6 +419,62 @@ a{
 .mobile-copyright{
     display: none;
 }
+.feedback-header .burger .burger-line{
+    background: #2B2A29;
+}
+.feedback-form-container{
+    display: flex;
+    margin: 10px 0 30px 0;
+}
+.feedback-form-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 105px;
+}
+.feedback-form{
+    width: 43.75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.form-title{
+    font-size: 35px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2B2A29;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+.feedback-map{
+    width: 56.25%;
+    height: 836px;
+    background: #f0f0f0;
+}
+.feedback-form-content input, .feedback-form-content textarea{
+    width: 370px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 10px 0;
+    border: 1px solid #707070;
+}
+.feedback-form-content textarea{
+    height: 120px;
+}
+.feedback-form-content button{
+    width: 390px;
+    height: 64px;
+    background: #FF565B;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: 900;
+    border: none;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1650px) {
     .top-banner-title {
         font-size: 45px;
@@ -403,6 +483,23 @@ a{
 }
 
 @media (max-width: 1200px) {
+    .menu-mobile-open.black-menu-open a{
+        color: #2B2A29;
+    }
+    .feedback-form-container{
+        flex-direction: column;
+    }
+    .feedback-map {
+        width: 100%;
+        height: 400px;
+    }
+    .feedback-form{
+        width: 100%;
+        align-items: center;
+    }
+    .feedback-form-content{
+      padding: 30px 0;
+    }
     .tariff-item{
         width: 400px;
     }
@@ -433,6 +530,15 @@ a{
     }
 }
 @media (max-width: 600px) {
+    .form-title{
+        font-size: 26px;
+    }
+    .feedback-form-content button{
+        width: 280px;
+    }
+    .feedback-form-content input, .feedback-form-content textarea{
+        width: 260px;
+    }
     .desktop-policy{
         display: none;
     }

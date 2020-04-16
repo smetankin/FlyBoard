@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./assets/css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="assets/js/readMoreFunc.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <link rel="stylesheet" href="assets/css/slick.css">
+</head>
+<body>
+<div class="header-container">
+    <div class="header-content black-header">
+        <div class="logo">
+            <img src="assets/images/footer-logo.png">
+        </div>
+        <div class="menu-content">
+            <div class="menu">
+                <a href="#">Прокат</a>
+                <a href="#">Мероприятия</a>
+                <a href="#">галерея</a>
+                <a href="#">О нас</a>
+                <a href="#">Сертификаты</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="telephone-desktop">
+                <img src="assets/images/footer-call.png">
+                <div class="number-telephone"> +38 092 41 42 123</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header mobile feedback-header">
+        <div class="burger" id="burger" onclick="burger()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="logo">
+            <img src="assets/images/footer-logo.png">
+        </div>
+        <div class="telephone-mobile">
+            <img src="assets/images/footer-call.png">
+        </div>
+    </div>
+    <div class="menu-mobile-open mobile black-menu-open" id="menu-block">
+        <a href="#">Прокат</a>
+        <a href="#">Мероприятия</a>
+        <a href="#">галерея</a>
+        <a href="#">О нас</a>
+        <a href="#">Сертификаты</a>
+        <a href="#">Контакты</a>
+    </div>
+</div>
+
+<div class="feedback-form-container">
+    <div class="feedback-map">
+
+    </div>
+    <div class="feedback-form">
+        <div class="feedback-form-content">
+            <div class="form-title">
+                Обратная связь
+            </div>
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="email">
+            <textarea placeholder="message"></textarea>
+            <button> Отправить </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-logo-policy">
+            <div class="footer-logo">
+                <img src="assets/images/footer-logo.png">
+            </div>
+            <div class="desktop-policy">
+                © 2020 | Privacy Policy
+            </div>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Прокат</a>
+            <a href="#">Мероприятия</a>
+            <a href="#">галерея</a>
+            <a href="#">О нас</a>
+            <a href="#">Сертификаты</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="footer-contacts-social">
+            <div class="footer-contacts">
+                <div class="footer-contact">
+                    <div class="footer-contact-image">
+                        <img src="assets/images/footer-map.png">
+                    </div>
+                    <div class="footer-contact-text">
+                        Nullam mi tellus, vehicula
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <div class="footer-contact-image">
+                        <img src="assets/images/footer-call.png">
+                    </div>
+                    <div class="footer-contact-text">
+                        +38 092 4142 123
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <div class="footer-contact-image">
+                        <img src="assets/images/footer-mail.png">
+                    </div>
+                    <div class="footer-contact-text">
+                        Nullam@lorem.com
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-image">
+                    <img src="assets/images/facebook.png">
+                </div>
+                <div class="footer-social-image">
+                    <img src="assets/images/twitter.png">
+                </div>
+                <div class="footer-social-image">
+                    <img src="assets/images/notification.png">
+                </div>
+                <div class="footer-social-image">
+                    <img src="assets/images/instagram.png">
+                </div>
+            </div>
+            <div class="desktop-policy mobile-copyright">
+                © 2020 | Privacy Policy
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/burger.js"></script>
+<script>
+    $('.main-slider').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        autoplay: false,
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.js"></script>
+<script>
+    $('.readmore-content').readmore({
+        embedCSS: false,
+        speed: 400,
+        moreLink: '<div class="read-more-btn">Читать далее</div>',
+        lessLink: '<div class="read-more-btn hide">Скрыть</div>',
+        heightMargin: 25,
+        collapsedHeight: 90,
+    });
+</script>
+</body>
+</html>
