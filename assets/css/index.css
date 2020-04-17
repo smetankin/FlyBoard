@@ -482,6 +482,45 @@ a{
     text-transform: uppercase;
 }
 
+.movement-container{
+    max-width: 1200px;
+    margin: auto;
+}
+.movement-page-banner{
+    margin: 60px 0 100px 0;
+}
+.instructors{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 57px 0 83px 0;
+    flex-wrap: wrap;
+
+}
+.instructor-item{
+    width: 288px;
+    background: #FFFFFF;
+}
+
+
+.instructor-name{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 20px 0 20px;
+    color: #2B2A29;
+    opacity: 0.8;
+}
+.instructor-description{
+    color: #555554;
+    padding: 5px 20px 15px 20px;
+}
+.movement-gradient-container{
+    background: linear-gradient(0deg, rgba(247,247,254,1) 0%, rgba(247,247,254,0) 100%);
+}
+
 @media (max-width: 1650px) {
     .top-banner-title {
         font-size: 45px;
@@ -490,6 +529,12 @@ a{
 }
 
 @media (max-width: 1200px) {
+    .instructors{
+        justify-content: center;
+    }
+    .instructor-item{
+        margin: 10px;
+    }
     .menu-mobile-open.black-menu-open a{
         color: #2B2A29;
     }
