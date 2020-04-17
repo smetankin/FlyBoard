@@ -16,6 +16,13 @@ a{
 .top-container.event-container{
     background: url("../images/eventBaner.png") no-repeat bottom;
 }
+
+.top-container.movement-banner{
+    background: url("../images/movement-banner.png") no-repeat top;
+}
+.top-banner-content.movement-banner-content{
+    padding: 115px 0 40px 0;
+}
 .header-container{
     width: 94%;
     max-width: 1820px;
