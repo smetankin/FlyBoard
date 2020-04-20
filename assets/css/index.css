@@ -20,7 +20,10 @@ a{
 .top-container.movement-banner{
     background: url("../images/movement-banner.png") no-repeat top;
 }
-.top-banner-content.movement-banner-content{
+.top-container.sertificate-banner{
+    background: url("../images/sertificate-top-banner.png") no-repeat top;
+}
+.top-banner-content.movement-banner-content, .top-banner-content.sertificate-banner-content{
     padding: 115px 0 40px 0;
 }
 .header-container{
@@ -520,6 +523,110 @@ a{
 .movement-gradient-container{
     background: linear-gradient(0deg, rgba(247,247,254,1) 0%, rgba(247,247,254,0) 100%);
 }
+.sertificate-items{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:  0 auto 55px auto;
+    padding: 85px 0;
+}
+.sertificate-item{
+    width: 590px;
+    position: relative;
+    margin-top: 20px;
+}
+.sertificate-top-content{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 38px;
+    font-style: italic;
+    padding: 17px 0 25px 25px;
+}
+.sertificate-top-content span{
+    font-size: 22px;
+    font-style: normal;
+    display: inline-block;
+    width: 50%;
+    padding-top: 25px;
+}
+.sertificate-bottom-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.77);
+    height: 126px;
+    display: flex;
+}
+.sertificate-bottom-text-content{
+    width: 80%;
+}
+.setrificate-bottom-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    padding: 10px 15px 10px 20px;
+    color: #292929;
+}
+.sertificate-bottom-description{
+    font-size: 12px;
+    padding: 0 20px;
+    color: #292929;
+    opacity: 0.6;
+}
+.sertificate-bottom-description div{
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.sertificate-bottom-description a{
+    color: #fe777b;
+    font-weight: 700;
+    /*margin: 10px 0;*/
+}
+.sertificate-price-button{
+    width: 20%;
+}
+.sertificate-price, .sertificate-btn-buy{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #535353;
+    background: #ffffff;
+    text-transform: uppercase;
+}
+.sertificate-btn-buy{
+    color: #FFFFFF;
+    background: #FF565B;
+    border-bottom-right-radius: 8px;
+}
+.gallery-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto 65px auto;
+}
+.gallery-container a{
+    width: 33%;
+    max-width: 630px;
+}
+.gallery-title{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2B2A29;
+    opacity: 0.8;
+    margin: 83px 0 65px 0;
+}
 
 @media (max-width: 1650px) {
     .top-banner-title {
@@ -529,6 +636,9 @@ a{
 }
 
 @media (max-width: 1200px) {
+    .sertificate-items{
+        justify-content: center;
+    }
     .instructors{
         justify-content: center;
     }
@@ -582,6 +692,26 @@ a{
     }
 }
 @media (max-width: 600px) {
+    .sertificate-item{
+        width: 370px;
+    }
+    .sertificate-price, .sertificate-btn-buy{
+        font-size: 14px;
+        text-align: center;
+    }
+    .sertificate-bottom-description{
+        font-size: 10px;
+    }
+    .sertificate-top-content{
+        font-size: 25px;
+    }
+    .sertificate-top-content span{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .setrificate-bottom-title{
+        font-size: 18px;
+    }
     .form-title{
         font-size: 26px;
     }
@@ -628,5 +758,10 @@ a{
     .footer-social{
         justify-content: center;
         padding-top: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .sertificate-item{
+        width: 350px;
     }
 }
