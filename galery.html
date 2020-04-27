@@ -13,46 +13,46 @@
 </head>
 <body>
 <div class="header-container">
-    <div class="header-content black-header">
-        <div class="logo">
+    <header class="header-content black-header">
+        <a class="logo">
             <img src="assets/images/footer-logo.png">
-        </div>
+        </a>
         <div class="menu-content">
-            <div class="menu">
+            <nav class="menu">
                 <a href="#">Прокат</a>
                 <a href="#">Мероприятия</a>
                 <a href="#">галерея</a>
                 <a href="#">О нас</a>
                 <a href="#">Сертификаты</a>
                 <a href="#">Контакты</a>
-            </div>
+            </nav>
             <div class="telephone-desktop">
                 <img src="assets/images/footer-call.png">
-                <div class="number-telephone"> +38 092 41 42 123</div>
+                <a class="number-telephone" href="tel:+380924142123"> +38 092 41 42 123</a>
             </div>
         </div>
-    </div>
-    <div class="mobile-header mobile feedback-header">
+    </header>
+    <header class="mobile-header mobile feedback-header">
         <div class="burger" id="burger" onclick="burger()">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
-        <div class="logo">
+        <a href="#" class="logo">
             <img src="assets/images/footer-logo.png">
-        </div>
+        </a>
         <div class="telephone-mobile">
             <img src="assets/images/footer-call.png">
         </div>
-    </div>
-    <div class="menu-mobile-open mobile black-menu-open" id="menu-block">
+    </header>
+    <nav class="menu-mobile-open mobile black-menu-open" id="menu-block">
         <a href="#">Прокат</a>
         <a href="#">Мероприятия</a>
         <a href="#">галерея</a>
         <a href="#">О нас</a>
         <a href="#">Сертификаты</a>
         <a href="#">Контакты</a>
-    </div>
+    </nav>
 </div>
 
 <h1 class="gallery-title">
@@ -89,50 +89,52 @@
     </a>
 </div>
 
-<div class="footer">
+<footer class="footer">
     <div class="footer-logo-policy">
-        <div class="footer-logo">
-            <img src="assets/images/footer-logo.png">
-        </div>
-        <div class="desktop-policy">
-            © 2020 | Privacy Policy
-        </div>
+        <a href="#">
+            <div class="footer-logo">
+                <img src="assets/images/footer-logo.png">
+            </div>
+        </a>
+        <span class="desktop-policy">
+                © 2020 | Privacy Policy
+            </span>
     </div>
-    <div class="footer-menu">
+    <nav class="footer-menu">
         <a href="#">Прокат</a>
         <a href="#">Мероприятия</a>
         <a href="#">галерея</a>
         <a href="#">О нас</a>
         <a href="#">Сертификаты</a>
         <a href="#">Контакты</a>
-    </div>
+    </nav>
     <div class="footer-contacts-social">
         <div class="footer-contacts">
             <div class="footer-contact">
                 <div class="footer-contact-image">
                     <img src="assets/images/footer-map.png">
                 </div>
-                <div class="footer-contact-text">
-                    Nullam mi tellus, vehicula
-                </div>
+                <span class="footer-contact-text">
+                        Nullam mi tellus, vehicula
+                    </span>
             </div>
 
             <div class="footer-contact">
                 <div class="footer-contact-image">
                     <img src="assets/images/footer-call.png">
                 </div>
-                <div class="footer-contact-text">
+                <a href="tel:+380924142123" class="footer-contact-text">
                     +38 092 4142 123
-                </div>
+                </a>
             </div>
 
             <div class="footer-contact">
                 <div class="footer-contact-image">
                     <img src="assets/images/footer-mail.png">
                 </div>
-                <div class="footer-contact-text">
+                <a href="mailto:Nullam@lorem.com" class="footer-contact-text">
                     Nullam@lorem.com
-                </div>
+                </a>
             </div>
         </div>
         <div class="footer-social">
@@ -149,11 +151,11 @@
                 <img src="assets/images/instagram.png">
             </div>
         </div>
-        <div class="desktop-policy mobile-copyright">
-            © 2020 | Privacy Policy
-        </div>
+        <span class="desktop-policy mobile-copyright">
+                © 2020 | Privacy Policy
+            </span>
     </div>
-</div>
+</footer>
 <script src="assets/js/burger.js"></script>
 <script src="lightbox2-2.11.1/src/js/lightbox.js"></script>
 </body>
