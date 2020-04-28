@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/slick.js"></script>
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -14,38 +15,38 @@
 <body>
     <div class="top-container sertificate-banner">
         <div class="header-container">
-            <div class="header-content">
-                <div class="logo">
+            <header class="header-content">
+                <a class="logo" href="#">
                     <img src="assets/images/logo.png">
-                </div>
-                    <div class="menu-content">
-                    <div class="menu">
+                </a>
+                <div class="menu-content">
+                    <nav class="menu">
                         <a href="#">Прокат</a>
                         <a href="#">Мероприятия</a>
                         <a href="#">галерея</a>
                         <a href="#">О нас</a>
                         <a href="#">Сертификаты</a>
                         <a href="#">Контакты</a>
-                    </div>
+                    </nav>
                     <div class="telephone-desktop">
-                        <img src="assets/images/icon-telephone.png">
-                        <div class="number-telephone"> +38 092 41 42 123</div>
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="number-telephone" href="tel:+380924142123"> +38 092 41 42 123</a>
                     </div>
                 </div>
-            </div>
-            <div class="mobile-header mobile">
+            </header>
+            <header class="mobile-header mobile">
                 <div class="burger" id="burger" onclick="burger()">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                 </div>
-                <div class="logo">
+                <a href="#" class="logo">
                     <img src="assets/images/logo.png">
-                </div>
-                <div class="telephone-mobile">
-                    <img src="assets/images/mobile-telephone.png">
-                </div>
-            </div>
+                </a>
+                <a href="tel:+380924142123" class="telephone-mobile">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </header>
             <div class="menu-mobile-open mobile" id="menu-block">
                 <a href="#">Прокат</a>
                 <a href="#">Мероприятия</a>
@@ -91,9 +92,9 @@
                             <div class="sertificate-price">
                                 12 000 грн
                             </div>
-                            <div class="sertificate-btn-buy">
+                            <a href="#" class="sertificate-btn-buy">
                                 Купить
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -124,9 +125,9 @@
                             <div class="sertificate-price">
                                 5 000 грн
                             </div>
-                            <div class="sertificate-btn-buy">
+                            <a href="#" class="sertificate-btn-buy">
                                 Купить
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -157,9 +158,9 @@
                             <div class="sertificate-price">
                                 1 000 грн
                             </div>
-                            <div class="sertificate-btn-buy">
+                            <a href="#" class="sertificate-btn-buy">
                                 Купить
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -187,12 +188,12 @@
                             </div>
                         </div>
                         <div class="sertificate-price-button">
-                            <div class="sertificate-price">
+                            <span class="sertificate-price">
                                 500 грн
-                            </div>
-                            <div class="sertificate-btn-buy">
+                            </span>
+                            <a href="#" class="sertificate-btn-buy">
                                 Купить
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -201,71 +202,73 @@
 
     </div>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="footer-logo-policy">
-            <div class="footer-logo">
-                <img src="assets/images/footer-logo.png">
-            </div>
-            <div class="desktop-policy">
+            <a href="#">
+                <div class="footer-logo">
+                    <img src="assets/images/footer-logo.png">
+                </div>
+            </a>
+            <span class="desktop-policy">
                 © 2020 | Privacy Policy
-            </div>
+            </span>
         </div>
-        <div class="footer-menu">
+        <nav class="footer-menu">
             <a href="#">Прокат</a>
             <a href="#">Мероприятия</a>
             <a href="#">галерея</a>
             <a href="#">О нас</a>
             <a href="#">Сертификаты</a>
             <a href="#">Контакты</a>
-        </div>
+        </nav>
         <div class="footer-contacts-social">
             <div class="footer-contacts">
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-map.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <span class="footer-contact-text">
                         Nullam mi tellus, vehicula
-                    </div>
+                    </span>
                 </div>
 
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-call.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <a href="tel:+380924142123" class="footer-contact-text">
                         +38 092 4142 123
-                    </div>
+                    </a>
                 </div>
 
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-mail.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <a href="mailto:Nullam@lorem.com" class="footer-contact-text">
                         Nullam@lorem.com
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="footer-social">
-                <div class="footer-social-image">
-                    <img src="assets/images/facebook.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/twitter.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/notification.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/instagram.png">
-                </div>
+                <a  href="#" class="footer-social-image">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
             </div>
-            <div class="desktop-policy mobile-copyright">
+            <span class="desktop-policy mobile-copyright">
                 © 2020 | Privacy Policy
-            </div>
+            </span>
         </div>
-    </div>
+    </footer>
 <script src="assets/js/burger.js"></script>
 </body>
 </html>

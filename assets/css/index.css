@@ -19,12 +19,20 @@ a{
 
 .top-container.movement-banner{
     background: url("../images/movement-banner.png") no-repeat top;
+    padding-bottom: 115px;
 }
 .top-container.sertificate-banner{
     background: url("../images/sertificate-top-banner.png") no-repeat top;
 }
+.top-banner-content{
+    display: flex;
+    flex-direction: column;
+}
 .top-banner-content.movement-banner-content, .top-banner-content.sertificate-banner-content{
     padding: 115px 0 40px 0;
+}
+.top-banner-content.movement-banner-content{
+    padding-bottom: 0;
 }
 .header-container{
     width: 94%;
@@ -49,6 +57,15 @@ a{
 }
 .black-header .telephone-desktop img{
     width: 20px;
+}
+.telephone-desktop i{
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.6;
+}
+.telephone-mobile i{
+    font-size: 21px;
+    color: #FFFFFF;
 }
 .menu-content{
     display: flex;
@@ -417,6 +434,12 @@ a{
     width: 31px;
     margin-right: 12px;
 }
+.footer-social-image i{
+    font-size: 31px;
+}
+.footer-social-image i:hover{
+    color: #FF565B;
+}
 .footer-menu a{
     font-size: 14px;
     font-weight: 600;
@@ -480,10 +503,10 @@ a{
     height: 836px;
     background: #f0f0f0;
 }
-form{
+.feedback-form-fields{
     width: 370px;
 }
-.feedback-form-content input, .feedback-form-content textarea{
+.feedback-form-fields .feedback-input, .feedback-form-fields .feedback-textarea{
     width: 100%;
     height: 50px;
     border-radius: 7px;
@@ -491,12 +514,17 @@ form{
     padding-left: 15px;
     margin: 10px 0;
     border: 1px solid #707070;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
 }
-.feedback-form-content textarea{
+.feedback-form-fields .feedback-input:focus, .feedback-form-fields .feedback-textarea:focus{
+    border-color: #FF565B;
+}
+.feedback-form-content .feedback-textarea{
     height: 120px;
     resize: vertical;
 }
-.feedback-form-content button{
+.feedback-form-content .submit-btn{
     width: 390px;
     height: 64px;
     background: #FF565B;
@@ -507,6 +535,7 @@ form{
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .movement-container{
@@ -515,6 +544,8 @@ form{
 }
 .movement-page-banner{
     margin: 60px 0 100px 0;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .instructors{
     display: flex;
@@ -523,7 +554,16 @@ form{
     margin: 0 auto 60px auto;
     padding: 57px 0 83px 0;
     flex-wrap: wrap;
-
+}
+.instructor-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instructor-photo{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .instructor-item{
     width: 288px;
@@ -600,6 +640,8 @@ form{
     padding: 0 20px;
     color: #292929;
     opacity: 0.6;
+    display: flex;
+    flex-direction: column;
 }
 .sertificate-bottom-description div{
     padding-bottom: 10px;
@@ -624,6 +666,7 @@ form{
     color: #535353;
     background: #ffffff;
     text-transform: uppercase;
+    padding: 0 10px;
 }
 .sertificate-btn-buy{
     color: #FFFFFF;
@@ -662,6 +705,12 @@ form{
     }
 }
 
+@media (max-width: 1400px) {
+    .menu a{
+        font-size: 14px;
+        padding: 0 8px;
+    }
+}
 @media (max-width: 1200px) {
     .sertificate-items{
         justify-content: center;
@@ -748,6 +797,7 @@ form{
     .feedback-form-content input, .feedback-form-content textarea{
         width: 260px;
     }
+
     .desktop-policy{
         display: none;
     }

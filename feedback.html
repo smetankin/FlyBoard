@@ -6,6 +6,7 @@
     <link href="./assets/css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--<script src="assets/js/readMoreFunc.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/slick.js"></script>
@@ -13,10 +14,10 @@
 </head>
 <body>
 <div class="header-container">
-    <header class="header-content black-header">
-        <div class="logo">
-            <img src="assets/images/footer-logo.png">
-        </div>
+    <header class="header-content">
+        <a class="logo" href="#">
+            <img src="assets/images/logo.png">
+        </a>
         <div class="menu-content">
             <nav class="menu">
                 <a href="#">Прокат</a>
@@ -27,24 +28,24 @@
                 <a href="#">Контакты</a>
             </nav>
             <div class="telephone-desktop">
-                <img src="assets/images/footer-call.png">
+                <i class="fas fa-phone-alt"></i>
                 <a class="number-telephone" href="tel:+380924142123"> +38 092 41 42 123</a>
             </div>
         </div>
     </header>
-    <div class="mobile-header mobile feedback-header">
+    <header class="mobile-header mobile">
         <div class="burger" id="burger" onclick="burger()">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
-        <div class="logo">
-            <img src="assets/images/footer-logo.png">
-        </div>
-        <div class="telephone-mobile">
-            <img src="assets/images/footer-call.png">
-        </div>
-    </div>
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png">
+        </a>
+        <a href="tel:+380924142123" class="telephone-mobile">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </header>
     <nav class="menu-mobile-open mobile black-menu-open" id="menu-block">
         <a href="#">Прокат</a>
         <a href="#">Мероприятия</a>
@@ -64,13 +65,13 @@
             <h1 class="form-title">
                 Обратная связь
             </h1>
-            <form>
-                <input type="text" placeholder="email">
-                <input type="text" placeholder="email">
-                <input type="text" placeholder="email">
-                <textarea placeholder="message"></textarea>
+            <form class="feedback-form-fields">
+                <input class="feedback-input" type="text" placeholder="email">
+                <input class="feedback-input" type="text" placeholder="email">
+                <input class="feedback-input" type="text" placeholder="email">
+                <textarea class="feedback-textarea" placeholder="message"></textarea>
             </form>
-            <button type="submit"> Отправить </button>
+            <button type="submit" class="submit-btn"> Отправить </button>
         </div>
     </div>
 </div>
@@ -123,18 +124,18 @@
             </div>
         </div>
         <div class="footer-social">
-            <div class="footer-social-image">
-                <img src="assets/images/facebook.png">
-            </div>
-            <div class="footer-social-image">
-                <img src="assets/images/twitter.png">
-            </div>
-            <div class="footer-social-image">
-                <img src="assets/images/notification.png">
-            </div>
-            <div class="footer-social-image">
-                <img src="assets/images/instagram.png">
-            </div>
+            <a href="#" class="footer-social-image">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="footer-social-image">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-image">
+                <i class="fab fa-snapchat"></i>
+            </a>
+            <a href="#" class="footer-social-image">
+                <i class="fab fa-instagram-square"></i>
+            </a>
         </div>
         <span class="desktop-policy mobile-copyright">
                 © 2020 | Privacy Policy

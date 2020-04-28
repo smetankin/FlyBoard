@@ -6,6 +6,7 @@
     <link href="./assets/css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/slick.js"></script>
     <link href="lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet" />
@@ -13,9 +14,9 @@
 </head>
 <body>
 <div class="header-container">
-    <header class="header-content black-header">
-        <a class="logo">
-            <img src="assets/images/footer-logo.png">
+    <header class="header-content">
+        <a class="logo" href="#">
+            <img src="assets/images/logo.png">
         </a>
         <div class="menu-content">
             <nav class="menu">
@@ -27,23 +28,23 @@
                 <a href="#">Контакты</a>
             </nav>
             <div class="telephone-desktop">
-                <img src="assets/images/footer-call.png">
+                <i class="fas fa-phone-alt"></i>
                 <a class="number-telephone" href="tel:+380924142123"> +38 092 41 42 123</a>
             </div>
         </div>
     </header>
-    <header class="mobile-header mobile feedback-header">
+    <header class="mobile-header mobile">
         <div class="burger" id="burger" onclick="burger()">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
         <a href="#" class="logo">
-            <img src="assets/images/footer-logo.png">
+            <img src="assets/images/logo.png">
         </a>
-        <div class="telephone-mobile">
-            <img src="assets/images/footer-call.png">
-        </div>
+        <a href="tel:+380924142123" class="telephone-mobile">
+            <i class="fas fa-phone-alt"></i>
+        </a>
     </header>
     <nav class="menu-mobile-open mobile black-menu-open" id="menu-block">
         <a href="#">Прокат</a>
@@ -139,16 +140,16 @@
         </div>
         <div class="footer-social">
             <div class="footer-social-image">
-                <img src="assets/images/facebook.png">
+                <i class="fab fa-facebook"></i>
             </div>
             <div class="footer-social-image">
-                <img src="assets/images/twitter.png">
+                <i class="fab fa-twitter"></i>
             </div>
             <div class="footer-social-image">
-                <img src="assets/images/notification.png">
+                <i class="fab fa-snapchat"></i>
             </div>
             <div class="footer-social-image">
-                <img src="assets/images/instagram.png">
+                <i class="fab fa-instagram-square"></i>
             </div>
         </div>
         <span class="desktop-policy mobile-copyright">

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/slick.js"></script>
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -14,60 +15,60 @@
 <body>
     <div class="top-container movement-banner">
         <div class="header-container">
-            <div class="header-content">
-                <div class="logo">
+            <header class="header-content">
+                <a class="logo" href="#">
                     <img src="assets/images/logo.png">
-                </div>
-                    <div class="menu-content">
-                    <div class="menu">
+                </a>
+                <div class="menu-content">
+                    <nav class="menu">
                         <a href="#">Прокат</a>
                         <a href="#">Мероприятия</a>
                         <a href="#">галерея</a>
                         <a href="#">О нас</a>
                         <a href="#">Сертификаты</a>
                         <a href="#">Контакты</a>
-                    </div>
+                    </nav>
                     <div class="telephone-desktop">
-                        <img src="assets/images/icon-telephone.png">
-                        <div class="number-telephone"> +38 092 41 42 123</div>
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="number-telephone" href="tel:+380924142123"> +38 092 41 42 123</a>
                     </div>
                 </div>
-            </div>
-            <div class="mobile-header mobile">
+            </header>
+            <header class="mobile-header mobile">
                 <div class="burger" id="burger" onclick="burger()">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                 </div>
-                <div class="logo">
+                <a href="#" class="logo">
                     <img src="assets/images/logo.png">
-                </div>
-                <div class="telephone-mobile">
-                    <img src="assets/images/mobile-telephone.png">
-                </div>
-            </div>
-            <div class="menu-mobile-open mobile" id="menu-block">
+                </a>
+                <a href="tel:+380924142123" class="telephone-mobile">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </header>
+            <nav class="menu-mobile-open mobile" id="menu-block">
                 <a href="#">Прокат</a>
                 <a href="#">Мероприятия</a>
                 <a href="#">галерея</a>
                 <a href="#">О нас</a>
                 <a href="#">Сертификаты</a>
                 <a href="#">Контакты</a>
-            </div>
+            </nav>
             <div class="top-banner-content movement-banner-content">
-                <div class="top-banner-title">
+                <h1 class="top-banner-title">
                     Fly board movement
-                </div>
+                </h1>
             </div>
         </div>
     </div>
 
-    <div class="movement-gradient-container">
+    <section class="movement-gradient-container">
         <div class="pre-footer">
-            <div class="pre-footer-title">
+            <h2 class="pre-footer-title">
                 Curabitur ut purus vehicula
-            </div>
-            <div class="pre-footer-text-readmore ">
+            </h2>
+            <p class="pre-footer-text-readmore ">
                 Phasellus hendrerit tellus non aliquet maximus. Sed vitae pretium elit,
                 at lacinia justo. Fusce purus neque, fringilla eu tortor vitae, volutpat varius elit.
                 Praesent ligula leo, pulvinar in velit nec, volutpat fringilla ante. Vestibulum a lorem in ante
@@ -77,7 +78,7 @@
                 vestibulum tincidunt sem, in pharetra orci scelerisque gravida.
                 Donec felis tellus, consectetur quis tortor non, vestibulum ullamcorper mauris. Aenean
                 vestibulum tincidunt sem, in pharetra orci scelerisque gravida.
-            </div>
+            </p>
         </div>
         <div class="movement-container">
             <div class="movement-page-banner">
@@ -88,12 +89,12 @@
             <div class="pre-footer-title">
                 Инструкторы
             </div>
-            <div class="pre-footer-text-readmore ">
+            <p class="pre-footer-text-readmore ">
                 Phasellus hendrerit tellus non aliquet maximus. Sed vitae pretium elit,
                 at lacinia justo. Fusce purus neque, fringilla eu tortor vitae, volutpat varius elit.
                 Praesent ligula leo, pulvinar in velit nec, volutpat fringilla ante. Vestibulum a lorem in ante
                 fermentum
-            </div>
+            </p>
         </div>
         <div class="instructors">
             <div class="instructor-item">
@@ -101,12 +102,12 @@
                     <img src="assets/images/person-1.png">
                 </div>
                 <div class="instructor-text">
-                    <div class="instructor-name">
+                    <span class="instructor-name">
                         Sample Name
-                    </div>
-                    <div class="instructor-description">
+                    </span>
+                    <span class="instructor-description">
                         Phasellus hendrerit tellus non aliquet maximus. Sed vitae
-                    </div>
+                    </span>
                 </div>
             </div>
             <div class="instructor-item">
@@ -114,12 +115,12 @@
                     <img src="assets/images/person-2.png">
                 </div>
                 <div class="instructor-text">
-                    <div class="instructor-name">
+                    <span class="instructor-name">
                         Sample Name
-                    </div>
-                    <div class="instructor-description">
+                    </span>
+                    <span class="instructor-description">
                         Phasellus hendrerit tellus non aliquet maximus. Sed vitae
-                    </div>
+                    </span>
                 </div>
             </div>
             <div class="instructor-item">
@@ -127,12 +128,12 @@
                     <img src="assets/images/person-3.png">
                 </div>
                 <div class="instructor-text">
-                    <div class="instructor-name">
+                    <span class="instructor-name">
                         Sample Name
-                    </div>
-                    <div class="instructor-description">
+                    </span>
+                    <span class="instructor-description">
                         Phasellus hendrerit tellus non aliquet maximus. Sed vitae
-                    </div>
+                    </span>
                 </div>
             </div>
             <div class="instructor-item">
@@ -140,82 +141,83 @@
                     <img src="assets/images/person-4.png">
                 </div>
                 <div class="instructor-text">
-                    <div class="instructor-name">
+                    <span class="instructor-name">
                         Sample Name
-                    </div>
-                    <div class="instructor-description">
+                    </span>
+                    <span class="instructor-description">
                         Phasellus hendrerit tellus non aliquet maximus. Sed vitae
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="footer">
+    </section>
+    <footer class="footer">
         <div class="footer-logo-policy">
-            <div class="footer-logo">
-                <img src="assets/images/footer-logo.png">
-            </div>
-            <div class="desktop-policy">
+            <a href="#">
+                <div class="footer-logo">
+                    <img src="assets/images/footer-logo.png">
+                </div>
+            </a>
+            <span class="desktop-policy">
                 © 2020 | Privacy Policy
-            </div>
+            </span>
         </div>
-        <div class="footer-menu">
+        <nav class="footer-menu">
             <a href="#">Прокат</a>
             <a href="#">Мероприятия</a>
             <a href="#">галерея</a>
             <a href="#">О нас</a>
             <a href="#">Сертификаты</a>
             <a href="#">Контакты</a>
-        </div>
+        </nav>
         <div class="footer-contacts-social">
             <div class="footer-contacts">
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-map.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <span class="footer-contact-text">
                         Nullam mi tellus, vehicula
-                    </div>
+                    </span>
                 </div>
 
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-call.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <a href="tel:+380924142123" class="footer-contact-text">
                         +38 092 4142 123
-                    </div>
+                    </a>
                 </div>
 
                 <div class="footer-contact">
                     <div class="footer-contact-image">
                         <img src="assets/images/footer-mail.png">
                     </div>
-                    <div class="footer-contact-text">
+                    <a href="mailto:Nullam@lorem.com" class="footer-contact-text">
                         Nullam@lorem.com
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="footer-social">
-                <div class="footer-social-image">
-                    <img src="assets/images/facebook.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/twitter.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/notification.png">
-                </div>
-                <div class="footer-social-image">
-                    <img src="assets/images/instagram.png">
-                </div>
+                <a  href="#" class="footer-social-image">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+                <a href="#" class="footer-social-image">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
             </div>
-            <div class="desktop-policy mobile-copyright">
+            <span class="desktop-policy mobile-copyright">
                 © 2020 | Privacy Policy
-            </div>
+            </span>
         </div>
-    </div>
+    </footer>
 <script src="assets/js/burger.js"></script>
 </body>
 </html>
