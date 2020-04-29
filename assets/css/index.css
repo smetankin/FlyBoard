@@ -671,12 +671,14 @@ a{
     height: 50px;
     border-radius: 7px;
     font-size: 18px;
+    font-weight: 600;
     padding-left: 15px;
     margin: 10px 0;
     border: 1px solid #707070;
     font-family: 'Montserrat', sans-serif;
     outline: none;
 }
+
 .feedback-form-fields .feedback-input:focus, .feedback-form-fields .feedback-textarea:focus{
     border-color: #FF565B;
 }
